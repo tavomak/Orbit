@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'roboto';
+  src: url(https://www.google.com/fonts#UsePlace:use/Collection:Roboto:400,300); }
+
+@font-face {
+  font-family: 'mostratworegularregular';
+  src: url("../fonts/mostratworegular-webfont.eot");
+  src: url("../fonts/mostratworegular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/mostratworegular-webfont.woff2") format("woff2"), url("../fonts/mostratworegular-webfont.woff") format("woff"), url("../fonts/mostratworegular-webfont.ttf") format("truetype"), url("../fonts/mostratworegular-webfont.svg#mostratworegularregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/*# sourceMappingURL=variables.css.map */
