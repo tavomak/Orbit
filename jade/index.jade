@@ -1,0 +1,36 @@
+doctype html
+html
+  head(lang="en")
+    title Document
+    meta(http-equiv="content-type", content="text/html; charset=UTF-8")
+    meta(name="description", content="")
+    meta(name="keywords", content="")
+    link(rel="stylesheet", href="")
+  body
+    nav.navbar.navbar-default.navbar-fixed-top(role='navigation')
+      a.navbar-brand(href='#') Title
+      ul.nav.navbar-nav
+        li.active
+          a(href='#') Home
+        li
+          a(href='#') Link
+    div
+        #carousel-example-generic.carousel.slide(data-ride='carousel')
+          ol.carousel-indicators
+            li.active(data-target='#carousel-example-generic', data-slide-to='0')  
+            li(data-target='#carousel-example-generic', data-slide-to='1')  
+            li(data-target='#carousel-example-generic', data-slide-to='2')  
+          .carousel-inner
+            .item.active
+              img(src='[INSERT IMAGE HERE]', alt='First slide')
+            .item
+              img(src='[INSERT IMAGE HERE]', alt='Second slide')
+            .item
+              img(src='[INSERT IMAGE HERE]', alt='Third slide')
+          a.left.carousel-control(href='#carousel-example-generic', data-slide='prev')
+            span.glyphicon.glyphicon-chevron-left
+          a.right.carousel-control(href='#carousel-example-generic', data-slide='next')
+            span.glyphicon.glyphicon-chevron-right
+
+
+    script(src="")
