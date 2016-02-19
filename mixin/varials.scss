@@ -1,0 +1,37 @@
+// fonts
+@font-face{
+	font-family: 'roboto';
+    src: url(https://www.google.com/fonts#UsePlace:use/Collection:Roboto:400,300);
+}
+@font-face{
+	font-family: 'mostratworegularregular';
+    src: url('../fonts/mostratworegular-webfont.eot');
+    src: url('../fonts/mostratworegular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/mostratworegular-webfont.woff2') format('woff2'),
+         url('../fonts/mostratworegular-webfont.woff') format('woff'),
+         url('../fonts/mostratworegular-webfont.ttf') format('truetype'),
+         url('../fonts/mostratworegular-webfont.svg#mostratworegularregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+$primary-font: 'roboto', sans-serif;
+$secondary-font: 'mostratworegularregular', sans-serif;
+$light:300;
+$regular: 400;
+$bold:700;
+// colors
+
+$color-1: rgba(239, 239, 239, 0.5); //negro transparencia
+$color-2: #ffffff; // blanco
+$color-3: #efe60c; // amarillo
+$color-t: #1c252e;
+$color-e: rgba(16, 119, 195, 0.85);
+$color-6: #1077c3;
+$color-4:#ADE1E3;
+$color-5:#878787;
+// animation
+
+$animation-duration: 0.7s;
+
+
+

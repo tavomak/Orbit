@@ -1,0 +1,83 @@
+html {
+    height:100%;
+}
+
+body {
+    margin:0;
+    padding:0;
+    height:100%;
+    width:100%;
+    -webkit-font-smoothing:antialiased;
+    -webkit-text-size-adjust:100%
+}
+.pattern {
+    background: rgba(216, 216, 216, 0.4);
+    @include size(100%);
+    position:absolute;
+    top:0;
+    left:0
+}
+.big-background {
+    z-index:550;
+    text-align:center;
+    height:100%;
+    min-height:100%;
+    position:relative;
+    overflow:hidden;
+    .bg-container{
+        .ct-bg{
+            background: $color-1;
+            display: block;
+            .info{
+                max-width: 600px;
+                margin: 0 auto;
+            }
+            span{font-size: 32px;}
+        }
+        .countdown {
+            padding: 10px;
+            li{
+                border: 1px solid white;
+            }
+        }
+        width:100%;
+        max-width:100%;
+        display:inline-block;
+        position:absolute;
+        top:50%;
+        left:50%;
+        @include transform(translate(-50%,-50%));
+        overflow: hidden;
+        &:before{
+            content: "";
+            display: table;
+            width: 100%;
+            border-top: 150px solid rgba(255, 255, 255, 0);
+            border-left: 1800px solid $color-1;
+            position: relative;
+        }
+        &:after{
+            content: "";
+            display: table;
+            width: 100%;
+            border-bottom: 150px solid rgba(255, 255, 255, 0);
+            border-right: 1800px solid $color-1;
+            position: relative;
+            top: -10px;
+        }
+    }
+}
+
+.big-background-default-image {
+    background:url(http://cdn.metabo.com/tt/pics/b74d249e89.jpg);
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size:cover;
+    @include size(100%);
+    z-index:0;
+    backface-visibility:hidden
+}
+.big-background-container{
+    background: red;
+    
+}

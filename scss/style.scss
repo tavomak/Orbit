@@ -1,4 +1,5 @@
 @import '../../asets/bourbon/bourbon'; // http://bourbon.io/
-@import '../mixin/media'; // Media Queries MQ(s,m,l,xl)
-@import '../mixin/others'; // centrado vertical/horizontal y fallback fuentes
-@import '../mixin/variables'; // colores, tipos de letra y personalizados
+@import '../mixin/mediaq'; // Media Queries MQ(s,m,l,xl)
+@import '../mixin/mix'; // centrado vertical/horizontal y fallback fuentes
+@import '../mixin/varials'; // colores, tipos de letra y personalizados
+@import '../scss/conteo';//sitio en construccion con cuenta regresiva

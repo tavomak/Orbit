@@ -1,36 +1,36 @@
 doctype html
-html
-  head(lang="en")
-    title Document
-    meta(http-equiv="content-type", content="text/html; charset=UTF-8")
-    meta(name="description", content="")
-    meta(name="keywords", content="")
-    link(rel="stylesheet", href="")
-  body
-    nav.navbar.navbar-default.navbar-fixed-top(role='navigation')
-      a.navbar-brand(href='#') Title
-      ul.nav.navbar-nav
-        li.active
-          a(href='#') Home
-        li
-          a(href='#') Link
-    div
-        #carousel-example-generic.carousel.slide(data-ride='carousel')
-          ol.carousel-indicators
-            li.active(data-target='#carousel-example-generic', data-slide-to='0')  
-            li(data-target='#carousel-example-generic', data-slide-to='1')  
-            li(data-target='#carousel-example-generic', data-slide-to='2')  
-          .carousel-inner
-            .item.active
-              img(src='[INSERT IMAGE HERE]', alt='First slide')
-            .item
-              img(src='[INSERT IMAGE HERE]', alt='Second slide')
-            .item
-              img(src='[INSERT IMAGE HERE]', alt='Third slide')
-          a.left.carousel-control(href='#carousel-example-generic', data-slide='prev')
-            span.glyphicon.glyphicon-chevron-left
-          a.right.carousel-control(href='#carousel-example-generic', data-slide='next')
-            span.glyphicon.glyphicon-chevron-right
-
-
-    script(src="")
+html(lang="es")
+    head
+        title Orbit c.a.
+        meta(http-equiv="content-type", content="text/html; charset=UTF-8")
+        meta(name="description", content="empresa líder en la distribución, comercialización y ventas al mayor de toda clase de equipos de oficina, máquinas y maquinarias, productos para las artes gráficas, herramientas eléctricas y equipos de seguridad")
+        meta(name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1")
+        meta(name="keywords", content="equipos de oficina, máquinas, productos para las artes gráficas, herramientas eléctricas, equipos de seguridad, Metabo, olympic.")
+        link(rel="shortcut icon" type="image/x-favicon" href="/img/favicon.ico")
+        link(name="author" content="Estela Estudio de diseño, info@estelaestudio.com")
+        link(rel="stylesheet" href="css/bootstrap.min.css")
+        link(rel="stylesheet" href="css/style-dist.css")
+    body
+        section.big-background
+            a#bgndVideo.player(data-property="{videoURL:'https://www.youtube.com/watch?v=UWF7dZTLW4c&list=PLHSpx_10lbS23KED_9tBfTf5Wru93WVtG',containment:'body',autoPlay:true, mute:true, startAt:0, opacity:1}")
+            div.pattern
+                div.bg-container
+                    .ct-bg
+                        img(src="img/logo.png") 
+                        br/
+                        div.info
+                            p Distribución y comercialización de productos de altísima calidad destinados al ramo ferretero, construcción e industria, asi como accesorios para máquinas y maquinarias de oficina, artes gráficas y herramientas, ofreciendo adicionalmente un servicio técnico confiable, con la garantía que sólo Orbit puede ofrecer.
+                        h2 Sitio en construcción
+                        p estaremos en linea en:
+                        br/
+                        //Cuenta regresiva para el lanzamiento
+                        include ../../asets/jade/countdown.jade
+        script(src="js/jquery.min.js")
+        script(src="js/bootstrap.min.js")
+        //Cuenta regresiva para el lanzamiento
+        script(src="js/jquery.downCount.js")
+        script(src="js/cuenta.js")
+        //Video-Bg
+        script(src="js/device.min.js")
+        script(src="js/jquery.mb.YTPlayer.js")
+        script(src="js/custom.js")

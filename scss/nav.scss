@@ -1,0 +1,23 @@
+nav{
+    .big-bg{
+        height: 100vh;
+        background: url(../img/big-bg.jpg) no-repeat;
+        background-position: center top;
+        background-size: cover;
+        h1{
+            @include vertical-align;
+            text-align: center;
+            color: aliceblue;
+            font-size: 42px;
+        }
+    }
+    .navbar{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        img{
+            position: relative;
+            top: -10px;
+        }
+    }
+}
