@@ -6,6 +6,12 @@ header{
         background-size: cover;
         margin: 0;
         padding: 0;
+        @include MQ(S){
+            background: url(../img/primary-bg-s.jpg) no-repeat;
+        }
+        @include MQ(M){
+            background: url(../img/primary-bg-m.jpg) no-repeat;
+        }
         h1{
             @include vertical-align;
             text-align: center;

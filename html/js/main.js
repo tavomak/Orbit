@@ -21,12 +21,26 @@
     navbar = $('#navbar-main');
     distance = navbar.offset().top;
     $window = $(window);
-    return $window.scroll(function() {
+    $window.scroll(function() {
       if ($window.scrollTop() >= distance) {
         navbar.removeClass('navbar-fixed-top').addClass('navbar-fixed-top');
       } else {
         navbar.removeClass('navbar-fixed-top');
       }
+    });
+    return $(function() {
+      $('#formulario').validate({
+        submitHandler: function(form) {
+          $(form).ajaxSubmit;
+          ({
+            url: 'process.php',
+            success: function() {
+              $('#formulario').hide();
+              $('#textoContacto').append('<h1>Gracias por contactar con nosotros.</h1>');
+            }
+          });
+        }
+      });
     });
   });
 

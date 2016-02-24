@@ -198,6 +198,18 @@ header .primary-bg {
   padding: 0;
 }
 
+@media only screen and (max-width: 480px) {
+  header .primary-bg {
+    background: url(../img/primary-bg-s.jpg) no-repeat;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  header .primary-bg {
+    background: url(../img/primary-bg-m.jpg) no-repeat;
+  }
+}
+
 header .primary-bg h1 {
   position: relative;
   top: 50%;
