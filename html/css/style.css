@@ -58,7 +58,7 @@ body {
 }
 
 .big-background .bg-container .ct-bg {
-  background: rgba(239, 239, 239, 0.5);
+  background: #08bebc;
   display: block;
 }
 
@@ -84,7 +84,7 @@ body {
   display: table;
   width: 100%;
   border-top: 150px solid rgba(255, 255, 255, 0);
-  border-left: 1800px solid rgba(239, 239, 239, 0.5);
+  border-left: 1800px solid #08bebc;
   position: relative;
 }
 
@@ -93,7 +93,7 @@ body {
   display: table;
   width: 100%;
   border-bottom: 150px solid rgba(255, 255, 255, 0);
-  border-right: 1800px solid rgba(239, 239, 239, 0.5);
+  border-right: 1800px solid #08bebc;
   position: relative;
   top: -10px;
 }
@@ -111,4 +111,252 @@ body {
 
 .big-background-container {
   background: red;
+}
+
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*::after, *::before {
+  content: '';
+}
+
+a {
+  text-decoration: none;
+}
+
+.dn {
+  display: none;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.cb {
+  clear: both;
+}
+
+header .primary-bg {
+  height: 100vh;
+  background: url(../img/primary-bg-xl.jpg) no-repeat;
+  background-position: center top;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+header .primary-bg h1 {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-align: center;
+  color: #ffffff;
+  font-size: 42px;
+}
+
+header nav {
+  position: relative;
+  top: 71%;
+  font-size: 14px;
+}
+
+nav ul li a:hover {
+  color: #ffffff !important;
+  background-color: #08bebc !important;
+}
+
+body p {
+  font-size: 14px;
+}
+
+#nosotros {
+  min-height: 550px;
+  background: url(../img/maquinaria.jpg) no-repeat;
+  background-position: right;
+}
+
+@media only screen and (max-width: 768px) {
+  #nosotros {
+    background: none;
+    text-align: center;
+    min-height: 0;
+  }
+}
+
+#nosotros .container {
+  min-height: 400px;
+  display: table;
+}
+
+@media only screen and (max-width: 480px) {
+  #nosotros .container {
+    min-height: 0;
+    margin: 35px 0 35px 0;
+  }
+}
+
+#nosotros .nosotros {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#nosotros .nosotros p {
+  max-width: 600px;
+}
+
+#hacemos {
+  background: #08bebc;
+  min-height: 200px;
+  margin-bottom: 25px;
+}
+
+#hacemos .container {
+  display: table;
+  min-height: 200px;
+  color: #ffffff;
+}
+
+#hacemos .hacemos {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+section .lista {
+  display: block;
+  margin: 50px 0 50px 0;
+  text-align: center;
+}
+
+section .lista li {
+  display: block;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+section .lista img {
+  margin-bottom: 10px;
+}
+
+#articulos p {
+  margin-bottom: 20px;
+}
+
+#articulos li:last-child {
+  padding-top: 85px;
+}
+
+#articulos .insumos {
+  text-align: center;
+  padding: 20px;
+  margin: 25px 0 25ps 0;
+}
+
+hr {
+  height: 2px;
+  background-color: #08bebc;
+  border: 0 none;
+}
+
+footer {
+  background: url(../img/foo.jpg) no-repeat;
+  background-size: cover;
+  min-height: 318px;
+  color: #ffffff;
+  padding: 25px;
+}
+
+footer .list-group li {
+  padding: 15px;
+  margin: 10px;
+}
+
+footer .glyphicon {
+  font-size: 36px;
+  margin: 0 15px 0 0;
+}
+
+form {
+  margin-top: 10px;
+}
+
+form input, form textarea {
+  background: rgba(255, 255, 255, 0.3);
+  padding: 5px;
+  border: 0 none;
+  width: 100%;
+}
+
+form textarea {
+  height: 80px;
+  resize: none;
+}
+
+form .btn {
+  margin-right: 15px;
+  border: 1px solid #ffffff;
+  background: none;
+  color: #ffffff;
+  width: 150px;
+  border-radius: 0;
+}
+
+form .btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+  color: #ffffff;
 }

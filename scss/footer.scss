@@ -1,0 +1,40 @@
+footer{
+    background: url(../img/foo.jpg) no-repeat;
+    background-size: cover;
+    min-height: 318px;
+    color: $color-2;
+    padding: 25px;
+    .list-group{
+        li{
+            padding: 15px;
+            margin: 10px;
+        }
+    }
+    .glyphicon{
+        font-size: 36px;
+        margin: 0 15px 0 0;
+    }
+}
+form{
+    margin-top: 10px;
+    input, textarea{
+        background: $color-e;
+        padding: 5px;
+        border: 0 none;
+        width: 100%;
+    }
+    textarea{
+        height: 80px;
+        resize:none;
+    }
+    .btn{
+        margin-right: 15px;
+        border: 1px solid $color-2;
+        background: none;
+        color: $color-2;
+        width: 150px;
+        border-radius: 0;
+        &:hover{background: $color-e;
+        color: $color-2;}
+    }
+}

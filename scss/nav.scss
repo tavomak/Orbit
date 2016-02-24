@@ -1,23 +1,28 @@
-nav{
-    .big-bg{
+header{
+    .primary-bg{
         height: 100vh;
-        background: url(../img/big-bg.jpg) no-repeat;
+        background: url(../img/primary-bg-xl.jpg) no-repeat;
         background-position: center top;
         background-size: cover;
+        margin: 0;
+        padding: 0;
         h1{
             @include vertical-align;
             text-align: center;
-            color: aliceblue;
+            color: $color-2;
             font-size: 42px;
         }
     }
-    .navbar{
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        img{
-            position: relative;
-            top: -10px;
-        }
+    nav{
+        position: relative;
+        top: 71%;
+        font-size: 14px;
+        
+    }
+}
+nav ul li a{
+    &:hover{
+        color: $color-2 !important;
+        background-color: $color-1 !important;
     }
 }

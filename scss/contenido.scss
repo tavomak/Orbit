@@ -1,0 +1,78 @@
+body{
+    p{font-size: 14px;}
+}
+#nosotros{
+    min-height: 550px;
+    background: url(../img/maquinaria.jpg) no-repeat;
+    @include MQ(SM){
+        background: none;
+        text-align: center;
+        min-height: 0;
+    }
+    background-position: right;
+    .container{
+        min-height: 400px;
+        display: table;
+        @include MQ(S){
+            min-height: 0;
+            margin: 35px 0 35px 0;
+        }
+    }
+    .nosotros{
+        display: table-cell;
+        vertical-align: middle;
+        p{
+            max-width: 600px;
+        }
+    }
+}
+#hacemos{
+    background: $color-1;
+    min-height: 200px;
+    margin-bottom: 25px;
+    .container{
+        display: table;
+        min-height: 200px;
+        color: $color-2;
+    }
+    .hacemos{
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        p{
+        }
+    }
+}
+section{
+    .lista{
+        display: block;
+        margin: 50px 0 50px 0;
+        text-align: center;
+        li{
+            display: block;
+            padding: 10px;
+            margin-bottom: 15px;
+        }
+        img{
+            margin-bottom: 10px;
+        }
+    }
+}
+#articulos{
+    p{
+        margin-bottom: 20px;
+    }
+    li:last-child{
+        padding-top: 85px;
+    }
+    .insumos{
+        text-align: center;
+        padding: 20px;
+        margin: 25px 0 25ps 0;
+    }
+}
+hr{
+    height: 2px;
+    background-color:$color-1;
+    border: 0 none;
+}
