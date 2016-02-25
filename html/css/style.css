@@ -190,6 +190,7 @@ a {
 }
 
 header .primary-bg {
+  position: relative;
   height: 100vh;
   background: url(../img/primary-bg-xl.jpg) no-repeat;
   background-position: center top;
@@ -201,12 +202,16 @@ header .primary-bg {
 @media only screen and (max-width: 480px) {
   header .primary-bg {
     background: url(../img/primary-bg-s.jpg) no-repeat;
+    background-position: center top;
+    background-size: cover;
   }
 }
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
   header .primary-bg {
     background: url(../img/primary-bg-m.jpg) no-repeat;
+    background-position: center top;
+    background-size: cover;
   }
 }
 
@@ -221,9 +226,20 @@ header .primary-bg h1 {
   font-size: 42px;
 }
 
+header .primary-bg p {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-align: center;
+  color: #ffffff;
+  font-size: 22px;
+}
+
 header nav {
   position: relative;
-  top: 71%;
+  top: -80px;
   font-size: 14px;
 }
 
@@ -232,19 +248,21 @@ nav ul li a:hover {
   background-color: #08bebc !important;
 }
 
-body p {
-  font-size: 14px;
+h1 {
+  padding: 10px 0 10px 0;
+  font-size: 28px;
+}
+
+p {
+  line-height: 120%;
 }
 
 #nosotros {
-  min-height: 550px;
-  background: url(../img/maquinaria.jpg) no-repeat;
-  background-position: right;
+  min-height: 400px;
 }
 
 @media only screen and (max-width: 768px) {
   #nosotros {
-    background: none;
     text-align: center;
     min-height: 0;
   }
@@ -267,14 +285,22 @@ body p {
   vertical-align: middle;
 }
 
-#nosotros .nosotros p {
-  max-width: 600px;
+#nosotros .glyphicon {
+  color: #08bebc;
 }
 
 #hacemos {
   background: #08bebc;
   min-height: 200px;
   margin-bottom: 25px;
+  display: block;
+  padding: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  #hacemos {
+    text-align: center;
+  }
 }
 
 #hacemos .container {
@@ -286,7 +312,6 @@ body p {
 #hacemos .hacemos {
   display: table-cell;
   vertical-align: middle;
-  text-align: center;
 }
 
 section .lista {
@@ -299,9 +324,29 @@ section .lista li {
   display: block;
   padding: 10px;
   margin-bottom: 15px;
+  cursor: pointer;
 }
 
 section .lista img {
+  margin-bottom: 10px;
+}
+
+.popover {
+  padding: 0;
+}
+
+.popover .popover-content {
+  margin: 5px;
+  padding: 0;
+}
+
+.popover h4, .popover hr {
+  margin: 0 0 10px 0;
+  padding: 0;
+}
+
+.popover p {
+  font-size: 12px;
   margin-bottom: 10px;
 }
 
@@ -325,6 +370,11 @@ hr {
   border: 0 none;
 }
 
+.glyphicon {
+  font-size: 36px;
+  margin: 0 15px 0 0;
+}
+
 footer {
   background: url(../img/foo.jpg) no-repeat;
   background-size: cover;
@@ -336,11 +386,6 @@ footer {
 footer .list-group li {
   padding: 15px;
   margin: 10px;
-}
-
-footer .glyphicon {
-  font-size: 36px;
-  margin: 0 15px 0 0;
 }
 
 form {

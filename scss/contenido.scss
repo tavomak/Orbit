@@ -1,15 +1,16 @@
-body{
-    p{font-size: 14px;}
+h1{
+    padding: 10px 0 10px 0;
+    font-size: 28px;
+}
+p{
+    line-height: 120%;
 }
 #nosotros{
-    min-height: 550px;
-    background: url(../img/maquinaria.jpg) no-repeat;
+    min-height: 400px;
     @include MQ(SM){
-        background: none;
         text-align: center;
         min-height: 0;
     }
-    background-position: right;
     .container{
         min-height: 400px;
         display: table;
@@ -21,15 +22,20 @@ body{
     .nosotros{
         display: table-cell;
         vertical-align: middle;
-        p{
-            max-width: 600px;
-        }
+    }
+    .glyphicon{
+        color: $color-1;
     }
 }
 #hacemos{
     background: $color-1;
     min-height: 200px;
     margin-bottom: 25px;
+    display: block;
+    padding: 20px;
+    @include MQ(SM){
+        text-align: center;
+    }
     .container{
         display: table;
         min-height: 200px;
@@ -38,9 +44,6 @@ body{
     .hacemos{
         display: table-cell;
         vertical-align: middle;
-        text-align: center;
-        p{
-        }
     }
 }
 section{
@@ -52,10 +55,26 @@ section{
             display: block;
             padding: 10px;
             margin-bottom: 15px;
+            cursor: pointer;
         }
         img{
             margin-bottom: 10px;
         }
+    }
+}
+.popover{
+    padding: 0;
+    .popover-content{
+        margin: 5px;
+        padding: 0;
+    }
+    h4, hr{
+        margin: 0 0 10px 0;
+        padding: 0;
+    }
+    p{
+        font-size: 12px;
+        margin-bottom: 10px;
     }
 }
 #articulos{
