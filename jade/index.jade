@@ -10,27 +10,397 @@ html(lang="es")
         link(name="author" content="Estela Estudio de diseño, info@estelaestudio.com")
         link(rel="stylesheet" href="css/bootstrap.min.css")
         link(rel="stylesheet" href="css/style-dist.css")
+        link(rel="stylesheet" href="css/animate.css")
     body
-        section.big-background
-            a#bgndVideo.player(data-property="{videoURL:'https://www.youtube.com/watch?v=UWF7dZTLW4c&list=PLHSpx_10lbS23KED_9tBfTf5Wru93WVtG',containment:'body',autoPlay:true, mute:true, startAt:0, opacity:1}")
-            div.pattern
-                div.bg-container
-                    .ct-bg
-                        img(src="img/logo.png") 
-                        br/
-                        div.info
-                            p Distribución y comercialización de productos de altísima calidad destinados al ramo ferretero, construcción e industria, asi como accesorios para máquinas y maquinarias de oficina, artes gráficas y herramientas, ofreciendo adicionalmente un servicio técnico confiable, con la garantía que sólo Orbit puede ofrecer.
-                        h2 Sitio en construcción
-                        p estaremos en linea en:
-                        br/
-                        //Cuenta regresiva para el lanzamiento
-                        include ../../asets/jade/countdown.jade
-        script(src="js/jquery.min.js")
+        header
+            div.primary-bg
+                h1 ¡Como solo Orbit lo puede ofrecer!
+                p Ofrecemos productos y servicios <br>de la más alta calidad al mejor precio.
+            nav.navbar.navbar-default#navbar-main
+                .container-fluid
+                    .navbar-header
+                        bt.navbar-toggle.colapsed(type="button" data-toggle="collapse" data-target="#navbar-1" aria-expanded="false")
+                            span.sr-only
+                            span.icon-bar
+                            span.icon-bar
+                            span.icon-bar
+                        a.navbar-brand(href="index.html")
+                            img(src="img/logo.png" alt="")
+                    .collapse.navbar-collapse#navbar-1
+                        ul.nav.navbar-nav
+                            li.active
+                                a(href="index.html") Inicio
+                            li
+                                a(href="#nosotros") Nosotros
+                            li
+                                a(href="#olympic") Productos
+                            li
+                                a(href="#contacto") Contacto
+        section#nosotros
+            div.container
+                div.nosotros
+                    ul.row
+                        li.col-xs-12.col-sm-6
+                            .glyphicon.glyphicon-lock.fl
+                            h1 La empresa
+                            p Orbit c.a. es una empresa que nació en marzo del 2002 en la ciudad de Barquisimeto, inicialmente estaba dedicada a la venta al mayor de  materiales de oficina.<br><br>Hoy en día ampliamos nuestro ámbito de acción, ofreciendo a nuestros clientes el mayor compromiso en la venta, distribución y comercialización de productos de altísima calidad destinados al ramo ferretero, construcción e industria, asi como accesorios para máquinas y maquinarias de oficina, artes gráficas y herramientas<br><br> Adicionalmente ofrecemos  servicio técnico confiable, con la garantía que sólo Orbit puede ofrecer. 
+                        li.col-xs-12.col-sm-6
+                            .glyphicon.glyphicon-eye-open.fl
+                            h1 Misión
+                            p Comprar, vender, distribuir, comercializar, toda clase de equipos de oficina, máquinas y maquinarias, productos para las artes gráficas, herramientas eléctricas y equipos de seguridad, así como accesorios para todos nuestros productos, ofreciendo además servicio técnico y de mantenimiento.
+        section#hacemos
+            div.container
+                ul.row.hacemos
+                    li.col-xs-12.col-sm-6
+                        div
+                            .glyphicon.glyphicon-flag.fl
+                            h1 En Orbit nos dedicamos a:
+                            p la venta distribución y comercialización de productos de altísima calidad destinados al ramo ferretero construcción e industria.
+                    li.col-xs-12.col-sm-6                
+                        div
+                            .glyphicon.glyphicon-shopping-cart.fl
+                            h1 Tambien ofrecemos:
+                            p accesorios para máquinas y maquinarias de oficina artes gráficas y herramientas ofreciendo adicionalmente un servicio técnico confiable.
+        section#olympic.container
+            img(src="img/logo-olympic.jpg" alt="Olympic").fl
+            hr
+            ul.row.list-unstyled.lista
+                li.col-xs-6.col-sm-4.col-md-3
+                    a(data-toggle="popover" data-target="#oly")
+                        img(src="img/ol-1.jpg" alt="")
+                        p Taladro <br> Percusión 3/8” + Box
+                    #oly.hide
+                        ul.list-unstyled
+                            li
+                                h4 Especificaciones
+                                hr
+                                p <b>Mandril:</b> 3/8”<br><b>Cap. Max. en:</b><br><ins>Acero:</ins> 8 mm<br><ins>Concreto:</ins> 10 mm<br><ins>Madera Blanda:</ins> 15 mm<br><b>Potencia:</b> 450 watt<br><b>Velocidad: sin carga:</b><br>0 ˜ 2.500 r.p.m<br><b>Peso:</b> 1,4 Kg.
+                                h4 Carácteristicas
+                                hr
+                                p Velocidad variable y reversible <br>Diseño ergonómico <br>Mandril automatico <br>Con o sin Maletin de accesorios.
+                li.col-xs-6.col-sm-4.col-md-3
+                    a(data-toggle="popover" data-target="#oly-1")
+                        img(src="img/ol-2.jpg" alt="")
+                        p  Martillo Combinado <br>(P04-RH24)
+                    #oly-1.hide
+                        ul.list-unstyled
+                            li
+                                h4 Especificaciones
+                                hr
+                                p <b>Cap. Max. en:</b><br><ins>Acero:</ins> 13 mm.<br><ins>Concreto:</ins> 24 mm.<br><ins>Madera:</ins> 30 mm.<br><b>Potencia:</b> 620 watt<br><b>Velocidad: sin carga:</b><br> 0 ˜ 870 r.p.m <br><b>Peso:</b> 2,4 Kg.
+                                h4 Carácteristicas
+                                hr
+                                p Sistema SDS plus<br>Maletin y accesorios incluidos:<br>2 Cinceles<br>3 Mechas (6 mm, 8 mm, 10 mm).
+                li.col-xs-6.col-sm-4.col-md-3
+                    a(data-toggle="popover" data-target="#oly-2")
+                        img(src="img/ol-3.jpg" alt="")
+                        p Taladro <br> Percusión 3/8” + Box
+                    #oly-2.hide
+                        ul.list-unstyled
+                            li
+                                h4 Especificaciones
+                                hr
+                                p <b>Mandril: 1/2”</b><br><b>*Cap. Max. en:</b><br><ins>Acero:</ins> 10 mm<br><ins>Concreto:</ins> 12 mm<br><ins>Madera Blanda:</ins> 20 mm<br><b>Potencia:</b> 710 watt<br><b>Velocidad: sin carga:</b><br>0 ˜ 3000 r.p.m <br><b>Peso:</b> 2.2 Kg.
+                                h4 Carácteristicas
+                                hr
+                                p Velocidad variable y reversible<br>Diseño ergonómico
+                li.col-xs-6.col-sm-4.col-md-3
+                    a(data-toggle="popover" data-target="#oly-3")
+                        img(src="img/ol-4.jpg" alt="")
+                        p Recortadora De Formica <br>( HW- ET006)
+                    #oly-3.hide
+                        ul.list-unstyled
+                            li
+                                h4 Especificaciones
+                                hr
+                                p <b>Velocidad sin carga:</b><br>33.500 r.p.m <br><b>Potencia:</b> 500 watt<br><b>Diametro de la broca:</b><br>1/4” ( 6,4 mm)<br><b>Peso:</b> 1,7 Kg.
+                li.col-xs-6.col-sm-4.col-md-3
+                    a(data-toggle="popover" data-target="#oly-4")
+                        img(src="img/ol-5.jpg" alt="")
+                        p Esmeril Angular 4 1/2” <br>(P02-AG115E)
+                    #oly-4.hide
+                        ul.list-unstyled
+                            li
+                                h4 Especificaciones
+                                hr
+                                p <b>Capacidad de disco:</b><br>4˜1/2” (115 mm)<br><b>Velocidad sin carga:</b><br>11.000 r.p.m<br><b>Potencia:</b> 860 watt<br><b>Rosca de eje:</b> M14<br><b>Peso:</b> 1,9 Kg.
+                li.col-xs-6.col-sm-4.col-md-3
+                    a(data-toggle="popover" data-target="#oly-5")
+                        img(src="img/ol-6.jpg" alt="")
+                        p Esmeril Angular 7” <br>(P01-AG180A)
+                    #oly-5.hide
+                        ul.list-unstyled
+                            li
+                                h4 Especificaciones
+                                hr
+                                p <b>Capacidad de disco:</b><br>7” (180 mm)<br><b>Velocidad sin carga:</b><br>8.000 r.p.m<br><b>Potencia:</b> 1.800 watt<br><b>Rosca de eje:</b> M14<br><b>Peso:</b> 5.2 Kg.
+                li.col-xs-6.col-sm-4.col-md-3
+                    a(data-toggle="popover" data-target="#oly-6")
+                        img(src="img/ol-7.jpg" alt="")
+                        p Esmeril Angular 4 1/2” <br>(HW-AG2123)
+                    #oly-6.hide
+                        ul.list-unstyled
+                            li
+                                h4 Especificaciones
+                                hr
+                                p <b>Capacidad de disco:</b><br>4˜1/2”(115 mm)<br><b>Velocidad sin carga:</b><br>11.000 r.p.m <br><b>Potencia:</b> 860 watt<br><b>Rosca de eje:</b> M14<br><b>Peso:</b> 2 Kg.
+                li.col-xs-6.col-sm-4.col-md-3
+                    a(data-toggle="popover" data-target="#oly-7")
+                        img(src="img/ol-8.jpg" alt="")
+                        p Trozadora 14” <br>(P04-CM355A)
+                    #oly-7.hide
+                        ul.list-unstyled
+                            li
+                                h4 Especificaciones
+                                hr
+                                p <b>Capacidad de disco:</b><br>14” (355 mm)<br><b>Velocidad sin carga:</b><br>3.500 r.p.m<br><b>Potencia:</b> 2.000 watt<br><b>Peso:</b> 5.2 Kg.
+                li.col-xs-6.col-sm-4.col-md-3
+                    a(data-toggle="popover" data-target="#oly-8")
+                        img(src="img/ol-9.jpg" alt="")
+                        p Sierra Circular <br>(MIY-185B)
+                    #oly-8.hide
+                        ul.list-unstyled
+                            li
+                                h4 Especificaciones
+                                hr
+                                p <b>Diámetro del disco:</b><br>7”(185 mm)<br><b>Diámetro del eje:</b><br>16 mm (5.8”)<br><b>Max. Cap. Corte:</b><br>70 mm <br><b>Velocidad sin carga:</b><br>4.500r.p.m<br><b>Potencia:</b> 1.350 watt<br><b>Peso:</b> 4,5 Kg.
+                li.col-xs-6.col-sm-4.col-md-3
+                    a(data-toggle="popover" data-target="#oly-9")
+                        img(src="img/ol-10.jpg" alt="")
+                        p Caladora Con Laser <br>(P01-JS80)                            
+                    #oly-9.hide
+                        ul.list-unstyled
+                            li
+                                h4 Especificaciones
+                                hr
+                                p <b>Cap. Max. en:</b><br><ins>Acero:</ins> 10 mm<br><ins>Aluminio:</ins> 18 mm<br><ins>Madera:</ins> 80 mm<br><b>Potencia:</b> 710 watt<br><b>Velocidad: sin carga:</b><br>500 ˜ 3000 r.p.m<br><b>Peso:</b> 2,3 Kg
+                                h4 Carácteristicas
+                                hr
+                                p Guia con Laser
+                li.col-xs-6.col-sm-4.col-md-3
+                    a(data-toggle="popover" data-target="#oly-10")
+                        img(src="img/ol-11.jpg" alt="")
+                        p Pulidora De 7” <br>(P04-PBO180)
+                    #oly-10.hide
+                        ul.list-unstyled
+                            li
+                                h4 Especificaciones
+                                hr
+                                p <b>Capacidad de disco:</b><br> 7” (180 mm)<br><b>Velocidad sin carga:</b><br>600 - 3.000 r.p.m <br><b>Potencia:</b> 1.200 watt<br><b>Rosca de eje:</b> M14<br><b>Peso:</b> 3,8 Kg.
+                li.col-xs-6.col-sm-4.col-md-3
+                    a(data-toggle="popover" data-target="#oly-11")
+                        img(src="img/ol-12.jpg" alt="")
+                        p Cepillo Electrico <br>(P05-PB82X2C)
+                    #oly-11.hide
+                        ul.list-unstyled
+                            li
+                                h4 Especificaciones
+                                hr
+                                p <b>Tamaño de la base:</b><br><ins>Ancho:</ins> 82 mm.<br><ins>Longitud:</ins> 285 mm. <br><b>Potencia:</b> 600 watt<br><b>Profundidad del cepillo:</b><br> 1 mm<br><b>Peso:</b> 3 Kg.
+                li.col-xs-6.col-sm-4.col-md-3
+                    a(data-toggle="popover" data-target="#oly-12")
+                        img(src="img/ol-13.jpg" alt="")
+                        p  Lijadora Exentrica <br>(P01-S125C)
+                    #oly-12.hide
+                        ul.list-unstyled
+                            li
+                                h4 Especificaciones
+                                hr
+                                p <b>Tamaño de la base:</b><br>5” (125 mm)<br><b>Potencia:</b> 400 watt<br><b>Velocidad: sin carga:</b><br>12.000 o.p.m.<br><b>Peso:</b> 2,5 Kg.
+                li.col-xs-6.col-sm-4.col-md-3
+                    a(data-toggle="popover" data-target="#oly-13")
+                        img(src="img/ol-14.jpg" alt="")
+                        p Lijadora De Banda 3x21 <br>(P04-S533X75)
+                    #oly-13.hide
+                        ul.list-unstyled
+                            li
+                                h4 Especificaciones
+                                hr
+                                p <b>Tamaño de la base:</b><br>3X21” (75X533 mm)<br><b>Potencia:</b> 700 watt<br><b>Velocidad:</b> 380 m/min<br><b>Peso:</b> 3,4 Kg.
+                li.col-xs-6.col-sm-4.col-md-3
+                    a(data-toggle="popover" data-target="#oly-14")
+                        img(src="img/ol-15.jpg" alt="")
+                        p Lijadora De Banda <br>(HW-PS1125)
+                    #oly-14.hide
+                        ul.list-unstyled
+                            li
+                                h4 Especificaciones
+                                hr
+                                p <b>Tamaño de la base:</b><br>4x24” (101x610 mm)<br><b>Potencia:</b> 1.300 watt<br><b>Velocidad:</b> 350 m/min<br><b>Peso:</b> 7,3 Kg.
+                li.col-xs-6.col-sm-4.col-md-3
+                    a(data-toggle="popover" data-target="#oly-15")
+                        img(src="img/ol-16.jpg" alt="")
+                        p Lijadora Orbital <br>(P02-SA02)
+                    #oly-15.hide
+                        ul.list-unstyled
+                            li
+                                h4 Especificaciones
+                                hr
+                                p <b>Tamaño de la base:</b><br>4 1/2x9” (115x227 mm)<br><b>Velocidad sin carga:</b><br>12.000 r.p.m.<br><b>Potencia:</b> 250 watt<br><b>Peso: </b> 2,4 Kg.
+                li.col-xs-6.col-sm-4.col-md-3
+                    a(data-toggle="popover" data-target="#oly-16")
+                        img(src="img/ol-17.jpg" alt="")
+                        p Martillo Demoledor <br>(DH1003)
+                    #oly-16.hide
+                        ul.list-unstyled
+                            li
+                                h4 Especificaciones
+                                hr
+                                p <b>Capacidad de disco:</b><br>7” (180 mm)<br><b>Velocidad sin carga:</b><br>600 - 3.000 r.p.m.<br><b>Potencia:</b> 1.200 watt<br><b>Rosca de eje:</b> M14<br><b>Peso:</b> 3,8 Kg.
+        section#metabo.container
+            img(src="img/logo-metabo.jpg" alt="metabo").fl
+            hr
+            ul.row.list-unstyled.lista
+                li.col-xs-6.col-sm-4.col-md-3
+                    a(data-toggle="popover" data-target="#mt")
+                        img(src="img/mt-1.jpg" alt="")
+                        p Taladro 1/2” R+L BE 561
+                    #mt.hide
+                        ul.list-unstyled
+                            li
+                                h4 Capacidades
+                                hr
+                                p <b>Acero:</b> 10 mm<br><b>Madera blanda:</b> 20 mm<br><b>Potencia:</b> 560 w<br><b>Par de giro:</b> 5 Nm<br><b>Velocidad en vacio:</b><br>0-2.800 r.p.m.<br><b>Peso neto:</b> 1,7Kg.
+                li.col-xs-6.col-sm-4.col-md-3
+                    a(data-toggle="popover" data-target="#mt-1")
+                        img(src="img/mt-2.jpg" alt="")
+                        p Esmeril De 4 1/2” W8-115
+                    #mt-1.hide
+                        ul.list-unstyled
+                            li
+                                h4 Especificaciones
+                                hr
+                                p <b>Diámetro de disco:</b><br>115 mmm<br><b>Rosca de husillo:</b> 5/8”<br><b>Potencia:</b> 800 w<br><b>Par de giro:</b> 2,2 Nm<br> <b>Velocidad en vacio:</b><br>10.000 r.p.m<br><b>Peso:</b> 1,9 Kg.
+                li.col-xs-6.col-sm-4.col-md-3
+                    a(data-toggle="popover" data-target="#mt-2")
+                        img(src="img/mt-3.jpg" alt="")
+                        p Esmeril De  7” W24-230
+                    #mt-2.hide
+                        ul.list-unstyled
+                            li
+                                h4 Características
+                                hr
+                                p <b>Rosca de husillo:</b> 5/8”<br><b>Potencia:</b> 2.400 w<br><b>Peso neto:</b> 4,9 Kg.
+                                hr
+                                p <b>Diámetro de disco:</b> 230 mm<br><b>Par de giro:</b> 17Nm <br><b>Velocidad en vacio:</b> 6.600 r.p.m.
+                li.col-xs-6.col-sm-4.col-md-3
+                    a(data-toggle="popover" data-target="#mt-3")
+                        img(src="img/mt-4.jpg" alt="")
+                        p Esmeril De  9” W24-180
+                    #mt-3.hide
+                        ul.list-unstyled
+                            li
+                                h4 Características
+                                hr
+                                p <b>Rosca de husillo:</b> 5/8”<br><b>Potencia:</b> 2.400 w<br><b>Peso neto:</b> 4,9 Kg.
+                                hr
+                                p <b>Diámetro de disco:</b> 180 mm<br><b>Par de giro:</b> 14Nm<br><b>Velocidad en vacio:</b> 8.500 r.p.m.
+                li.col-xs-6.col-sm-4.col-md-3
+                    a(data-toggle="popover" data-target="#mt-4")
+                        img(src="img/mt-5.jpg" alt="")
+                        p Cizalla Eléctrica KU 6870
+                    #mt-4.hide
+                        ul.list-unstyled
+                            li
+                                h4 Especificaciones
+                                hr
+                                p <b>Espesor máximo de chapa:</b><br><ins>Acero 400 N/mm²:</ins> 2,5 mm <br><ins>Acero 800 N/mm²:</ins> 1,6 mm <br><ins>Aluminio 250 N/mm²:</ins> 2,5 mm <br><b>Potencia:</b> 550 w <br><b>Par de giro:</b> 6 Nm <br><b>N° Carreras en <br>marcha en vacio:</b> 3.000 / min <br><b>Peso neto:</b> 2,5 Kg.
+                li.col-xs-6.col-sm-4.col-md-3
+                    a(data-toggle="popover" data-target="#mt-5")
+                        img(src="img/mt-6.jpg" alt="")
+                        p Tronzadora De Metal CS 23-355
+                    #mt-5.hide
+                        ul.list-unstyled
+                            li
+                                h4 Especificaciones
+                                hr
+                                p <b>Diámetro de disco</b> 350 mm<br><b>Potencia:</b> 2.300 w<br><b>Velocidad al vacio:</b><br>4.000 r.p.m <br><b>Capacidad máx. <br>de corte en:</b><br><ins>Acero en barra:</ins> 65 mm <br><ins>Tubos:</ins> 125 mm <br><ins>Perfiles de acero:</ins> 115 x 130 mm <br><b>Peso neto:</b> 16,9 Kg
+                li.col-xs-6.col-sm-4.col-md-3
+                    a(data-toggle="popover" data-target="#mt-6")
+                        img(src="img/mt-7.jpg" alt="")
+                        p Amoladora Recta G500
+                    #mt-6.hide
+                        ul.list-unstyled
+                            li
+                                h4 Especificaciones
+                                hr
+                                p <b>Diámetro de la pinza:</b> 1/4” y 6 mm <br><b>Potencia:</b> 500 w<br><b>Velocidad en vacio:</b> 27.000 r.p.m <br><b>Peso neto:</b> 1,4 Kg.
+                li.col-xs-6.col-sm-4.col-md-3
+                    a(data-toggle="popover" data-target="#mt-7")
+                        img(src="img/mt-8.jpg" alt="")
+                        p Amoladora Recta G700
+                    #mt-7.hide
+                        ul.list-unstyled
+                            li
+                                h4 Especificaciones
+                                hr
+                                p <b>Diámetro de la pinza:</b> 1/4” y 6 mm <br><b>Potencia:</b> 710 w <br><b>Velocidad en vacio:</b><br> 7.000-27.000 r.p.m <br><b>Peso neto:</b> 1,8 Kg
+            hr
+        section#articulos.container
+            ul.row.list-unstyled.lista
+                li.col-xs-6.col-sm-4.col-md-3
+                    a
+                        img(src="img/ar-1.jpg" alt="")
+                        p Relojes de tarjeta
+                        img(src="img/logo-md.jpg" alt="")
+                li.col-xs-6.col-sm-4.col-md-3
+                    a
+                        img(src="img/ar-2.jpg" alt="")
+                        p Relojes Digitales
+                        img(src="img/logo-zk.jpg" alt="")
+                li.col-xs-6.col-sm-4.col-md-3
+                    a
+                        img(src="img/ar-3.jpg" alt="")
+                        p Mechas para concreto
+                        img(src="img/logo-he.jpg" alt="")
+                li.col-xs-6.col-sm-4.col-md-3
+                    a
+                        img(src="img/logo-ri.jpg" alt="")
+                        p Insumos de copiado y Servicio Técnico
+            hr
+            ul.row.list-inline.insumos
+                li
+                    img(src="img/ag.jpg", alt="")
+                li
+                    h1 Insumos para Artes Gráficas:
+                li
+                    p Tintas - Mantillas -  Planchas -  Auxiliares
+        footer#contacto
+            .container
+                h1 Contáctanos
+                ul.row.list-unstyled
+                    li.col-xs-12.col-sm-6
+                        ul.list-group.list-unstyled
+                            li.list-item
+                                span.glyphicon.glyphicon-map-marker.fl
+                                p Estamos ubicados en la calle 32, entre carrera 19 y avenida 20. Casa °19-47. Barquisimeto estado lara, Venezuela.
+                            li.list-item
+                                span.glyphicon.glyphicon-phone.fl
+                                p 0251-2327204 0251-2326650 <br>0251-2311931 0251-2328804 
+                            li.list-item
+                                span.glyphicon.glyphicon-envelope.fl
+                                p orbitca@hotmail.com <br>orbitca01@gmail.com
+                    li.col-xs-12.col-sm-6
+                        form#contactForm.shake(role="form" data-toggle="validator")
+                            .row
+                                .form-group.col-xs-6
+                                    label.h4(for="name") Nombre
+                                    input#name(type="text" name="name" placeholder="Introduce tu nombre" required)
+                                    div.help-block.with-errors
+                                .form-group.col-xs-6
+                                    label.h4(for="email") Email
+                                    input#email(type="email" placeholder="Introduce tu Email" required)
+                                    div.help-block.with-errors
+                                .form-group.col-xs-12
+                                    label.h4(for="message") Mensaje
+                                    textarea#message(name="comment" row="5" placeholder="Escribe tu comentario" required)
+                                    div.help-block.with-errors
+                                button.btn.btn-success.btn-lg.pull-right#form-submit(type="submit") Enviar
+                                div#msgSubmit.text-center.hidden.h3
+                div.row
+                    p.text-center Orbit c.a. Rif: J-30904889-9 - 2016 derechos reservados.
+        script(src="js/jquery-1.12.1.min.js")
         script(src="js/bootstrap.min.js")
-        //Cuenta regresiva para el lanzamiento
-        script(src="js/jquery.downCount.js")
-        script(src="js/cuenta.js")
-        //Video-Bg
-        script(src="js/device.min.js")
-        script(src="js/jquery.mb.YTPlayer.js")
-        script(src="js/custom.js")
+        script(src="js/main-dist.js")
+        script(src="js/validator.min.js")
+        script(src="js/form-scripts.js")
