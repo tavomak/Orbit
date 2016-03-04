@@ -22,7 +22,7 @@ function submitForm(){
         url: "process.php",
         data: "name=" + name + "&email=" + email + "&message=" + message,
         success : function(text){
-            if (text == "success"){
+            if (text == "Mensaje enviado"){
                 formSuccess();
             } else {
                 formError();

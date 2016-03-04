@@ -1,6 +1,6 @@
 <?php
 //Correo de destino; donde se enviará el correo.
-$correoDestino = "orbit01@gmail.com";
+$correoDestino = "orbitca@hotmail.com , orbitca01@gmail.com, estela1estudio@gmail.com";
 //Formateo el asunto del correo
 $asunto = "Orbit WEB $nombre";
 
